@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Lexend';
+  src: url('./res/fonts/Lexend-Variable.ttf') format('truetype'), url('./res/fonts/Lexend-Regular.ttf') format('truetype'), url('./res/fonts/Lexend-Regular.woff') format('woff'), url('./res/fonts/Lexend-Regular.woff2') format('woff2'), url('./res/fonts/Lexend-Regular.eot?#iefix') format('embedded-opentype');
+  font-display: swap;
+}
+
+.radix-themes {
+  --default-font-family: 'Lexend', sans-serif;
+}
