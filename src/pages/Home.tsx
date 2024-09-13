@@ -199,7 +199,7 @@ const Home = () => {
           This site's source code is available on{' '}
           <Link
             target="_blank"
-            href="https://github.com/alex-chung-brisbane/cd-toolboxƒ"
+            href="https://github.com/alex-chung-brisbane/cd-toolbox"
           >
             GitHub
           </Link>
