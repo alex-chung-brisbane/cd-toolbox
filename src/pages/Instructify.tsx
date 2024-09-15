@@ -907,6 +907,13 @@ const Instructify = () => {
                                 >
                                   <Strong>Your inputs will remain on your device.</Strong>
                                 </Text>
+                                <Text
+                                  as="p"
+                                  size="2"
+                                  mt="2"
+                                >
+                                  Accepted file types: <Code variant="outline">JPG/JPEG</Code> <Code variant="outline">PNG</Code>
+                                </Text>
                                 <Heading
                                   as="h2"
                                   size="3"
@@ -956,6 +963,34 @@ const Instructify = () => {
                                     );
                                   })}
                                 </Grid>
+                                <Heading
+                                  as="h2"
+                                  size="3"
+                                  mt="5"
+                                >
+                                  Touch input
+                                </Heading>
+                                <Text
+                                  as="p"
+                                  size="2"
+                                  mt="2"
+                                >
+                                  The tool has touch support. Drag using one finger to pan/navigate the image in the editor.
+                                </Text>
+                                <Text
+                                  as="p"
+                                  size="2"
+                                  mt="2"
+                                >
+                                  Depending on the tool selected, you may be able to tap using one finger to insert (<Em>Numbering</Em> and <Em>Text</Em> tools support this). For most other tools, drag with two fingers to determine the drawn element's placement (for directional tools such as <Em>Arrow</Em>, it will depend on the order that the touches are detected, it will go <Strong>from</Strong> the first touch point <Strong>to</Strong> the second).
+                                </Text>
+                                <Text
+                                  as="p"
+                                  size="2"
+                                  mt="2"
+                                >
+                                  Use the provided buttons to <Em>Zoom</Em>.
+                                </Text>
                                 <Heading
                                   as="h2"
                                   size="3"
