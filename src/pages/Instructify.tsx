@@ -302,7 +302,7 @@ const Instructify = () => {
   function GetEditorHeight(): number {
     let totalHeight = window.innerHeight;
     let topY = editorWrapperRef.current ? (editorWrapperRef.current as HTMLDivElement).getBoundingClientRect().top : 0;
-    return totalHeight - topY - 16 * 0.95;
+    return totalHeight - topY - 20 * 0.95;
   }
   function UpdateEditorHeight(): void {
     setEditorHeight(GetEditorHeight());
