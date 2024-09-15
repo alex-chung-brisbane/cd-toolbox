@@ -907,6 +907,13 @@ const Instructify = () => {
                                 >
                                   <Strong>Your inputs will remain on your device.</Strong>
                                 </Text>
+                                <Text
+                                  as="p"
+                                  size="2"
+                                  mt="2"
+                                >
+                                  Accepted file types: <Code variant="outline">JPG/JPEG</Code> <Code variant="outline">PNG</Code>
+                                </Text>
                                 <Heading
                                   as="h2"
                                   size="3"
