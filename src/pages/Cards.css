@@ -1,0 +1,69 @@
+:root {
+  --card-height: 210px;
+  --card-width: calc(var(--card-height) * 0.7);
+  --card-interaction-height: 100px;
+}
+
+.cards-wrapper {
+  background-image: url(../res/cards_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.card {
+  transition: transform ease-out 200ms;
+}
+
+.card-wrapper:hover > .card {
+  transform: translateY(-80px) rotateZ(6deg) scale(1.05) rotate3d(1, -1, 0, 14deg) translate3d(1em, 0, 2em);
+  transition: transform ease-out 300ms;
+}
+
+.card-wrapper:first-child:hover > .card {
+  transition: transform ease-out 300ms;
+}
+
+.card-wrapper:last-child:hover > .card {
+  transform: translateY(-80px) translateX(-10px) rotateZ(-6deg) scale(1.05);
+  transition: transform ease-out 300ms;
+}
+
+.card-wrapper:has(+ .card-wrapper:hover) > .card {
+  transform: translateY(-55px) rotateZ(-4deg) scale(0.95);
+  transition: transform ease-out 200ms;
+}
+
+.card-wrapper:has(+ .card-wrapper:last-child:hover) > .card {
+  transform: translateY(-40px) rotateZ(-3deg) scale(0.9);
+  transition: transform ease-out 200ms;
+}
+
+.card-wrapper:hover + .card-wrapper > .card {
+  transform: translateY(-40px) rotateZ(3deg) scale(0.9);
+  transition: transform ease-out 200ms;
+}
+
+.card-wrapper .card::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  width: 100%;
+  z-index: 99;
+  height: 1rem;
+  border-radius: 100%;
+  top: 30px;
+  background-color: white;
+  right: 15%;
+  transform-origin: bottom right;
+  transform: rotateZ(-20deg);
+  filter: blur(32px);
+  opacity: 0;
+  transition: opacity 400ms, top 200ms;
+}
+
+.card-wrapper:hover .card::after {
+  top: 0;
+  opacity: 1;
+}
