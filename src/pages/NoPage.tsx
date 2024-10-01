@@ -1,14 +1,12 @@
-import { Heading, Box, Text } from '@radix-ui/themes';
+import { Heading, Text, Container } from '@radix-ui/themes';
 
 import LostImage from '../res/404.svg';
 
 const NoPage = () => {
   return (
-    <Box
-      maxWidth="400px"
+    <Container
+      size="1"
       px="5"
-      as="div"
-      style={{ margin: '0 auto' }}
     >
       <Heading
         as="h1"
@@ -44,7 +42,7 @@ const NoPage = () => {
       >
         Maybe try the navigation menu (top right)?
       </Text>
-    </Box>
+    </Container>
   );
 };
 
