@@ -1,5 +1,5 @@
 import { Box, Callout, Card, Container, Flex, Grid, ScrollArea, Slider, Text } from '@radix-ui/themes';
-import { useId, useState } from 'react';
+import { useState } from 'react';
 
 import { RotateCounterClockwiseIcon } from '@radix-ui/react-icons';
 
@@ -11,9 +11,9 @@ const Cards = () => {
   return (
     <Container size="4">
       <Callout.Root
-        size="1"
+        variant="surface"
         mt="1"
-        mb="6"
+        mb="4"
       >
         <Callout.Icon>
           <RotateCounterClockwiseIcon />
@@ -52,7 +52,7 @@ const Cards = () => {
           </Flex>
         </ScrollArea>
       </Grid>
-      <Card mt="3">
+      <Card mt="4">
         <Flex
           as="div"
           direction="row"
