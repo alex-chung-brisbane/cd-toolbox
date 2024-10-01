@@ -34,7 +34,6 @@ const Navbar = () => {
           </Button>
         </DropdownMenu.Trigger>
         <DropdownMenu.Content variant="soft">
-          <DropdownMenu.Label>Pages</DropdownMenu.Label>
           <DropdownMenu.Item asChild>
             <Link href="/">Home</Link>
           </DropdownMenu.Item>
@@ -51,6 +50,10 @@ const Navbar = () => {
           </DropdownMenu.Item>
           <DropdownMenu.Item asChild>
             <Link href="/filetree">Filetree</Link>
+          </DropdownMenu.Item>
+          <DropdownMenu.Label>Demos</DropdownMenu.Label>
+          <DropdownMenu.Item asChild>
+            <Link href="/cards">Cards</Link>
           </DropdownMenu.Item>
         </DropdownMenu.Content>
       </DropdownMenu.Root>

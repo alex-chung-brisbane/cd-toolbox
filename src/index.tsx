@@ -10,6 +10,7 @@ import NoPage from './pages/NoPage';
 import Filetree from './pages/Filetree';
 import Synergy from './pages/Synergy';
 import Instructify from './pages/Instructify';
+import Cards from './pages/Cards';
 
 import 'normalize.css';
 import '@radix-ui/themes/styles.css';
@@ -51,6 +52,10 @@ if (rootEl) {
               <Route
                 path="/filetree"
                 element={<Filetree />}
+              />
+              <Route
+                path="/cards"
+                element={<Cards />}
               />
               <Route
                 path="*"
