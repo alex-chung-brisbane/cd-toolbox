@@ -1174,7 +1174,7 @@ const Instructify = () => {
                               size="2"
                               value={numberValue}
                               onChange={(ev) => {
-                                setNumberValue(parseInt(ev.target.value));
+                                setNumberValue(ev.target.value);
                               }}
                               min={1}
                               step={1}
