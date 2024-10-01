@@ -1,4 +1,4 @@
-import { IconButton, TextField, AccessibleIcon, Tooltip, SegmentedControl, Text, Flex, Box, Button, Callout, Dialog, Code, Kbd } from '@radix-ui/themes';
+import { IconButton, TextField, AccessibleIcon, Tooltip, SegmentedControl, Text, Flex, Box, Button, Callout, Dialog, Code, Kbd, Container } from '@radix-ui/themes';
 import { useRef, useState } from 'react';
 import { Bounce, ToastContainer, toast } from 'react-toastify';
 import { hex_md5 } from './lib_synergy/md5';
@@ -17,10 +17,7 @@ const Synergy = () => {
   let copyButtonDebounce = false;
 
   return (
-    <Box
-      maxWidth="520px"
-      mx="auto"
-    >
+    <Container size="1">
       <Flex
         direction="column"
         gap="3"
@@ -210,7 +207,7 @@ const Synergy = () => {
           </SegmentedControl.Root>
         </Flex>
       </Flex>
-    </Box>
+    </Container>
   );
 };
 

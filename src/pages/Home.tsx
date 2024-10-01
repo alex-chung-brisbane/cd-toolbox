@@ -1,4 +1,4 @@
-import { Avatar, Badge, Box, Callout, Em, Flex, Heading, HoverCard, Link, Section, Separator, Strong, Text } from '@radix-ui/themes';
+import { Avatar, Badge, Box, Callout, Container, Em, Flex, Heading, HoverCard, Link, Section, Separator, Strong, Text } from '@radix-ui/themes';
 
 import { GitHubLogoIcon } from '@radix-ui/react-icons';
 import CatImg from '../res/cat.svg';
@@ -8,10 +8,7 @@ import ProfileImg from '../res/pfp.jpeg';
 
 const Home = () => {
   return (
-    <Box
-      maxWidth="700px"
-      mx="auto"
-    >
+    <Container size="2">
       <Heading
         as="h1"
         size="7"
@@ -206,7 +203,7 @@ const Home = () => {
           .
         </Callout.Text>
       </Callout.Root>
-    </Box>
+    </Container>
   );
 };
 

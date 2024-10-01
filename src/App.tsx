@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import { Container, Separator, Theme } from '@radix-ui/themes';
+import { Box, Container, Separator, Theme } from '@radix-ui/themes';
 
 import Navbar from './Navbar';
 
@@ -22,13 +22,12 @@ const App = () => {
           size="4"
         />
       </Theme>
-      <Container
-        size="4"
+      <Box
         px="3"
         pb="4"
       >
         <Outlet />
-      </Container>
+      </Box>
     </>
   );
 };
