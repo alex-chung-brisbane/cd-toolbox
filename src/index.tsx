@@ -11,6 +11,7 @@ import Filetree from './pages/Filetree';
 import Synergy from './pages/Synergy';
 import Instructify from './pages/Instructify';
 import Cards from './pages/Cards';
+import LinkedIn from './pages/LinkedIn';
 
 import 'normalize.css';
 import '@radix-ui/themes/styles.css';
@@ -40,6 +41,10 @@ if (rootEl) {
               <Route
                 path="/contact"
                 element={<Contact />}
+              />
+              <Route
+                path="/li"
+                element={<LinkedIn />}
               />
               <Route
                 path="/synergy"
