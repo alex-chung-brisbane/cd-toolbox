@@ -81,7 +81,7 @@ const LinkedIn = () => {
               color="gray"
               size="4"
             >
-              <Link href="mailto:hire.skye@chung.digital">hire.skye@chung.digital</Link>
+              <Link href="mailto:skye@chung.digital">skye@chung.digital</Link>
             </Text>
           </Flex>
         </Flex>
